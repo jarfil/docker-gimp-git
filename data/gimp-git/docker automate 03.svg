@@ -1,0 +1,240 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="593.15625" height="501.22076">
+  <style type="text/css">
+    <![CDATA[
+      .ns4 {
+        fill: #FFFF7F;
+        fill-opacity: 0.5019608;
+        stroke: #000000;
+        stroke-width: 2.0;
+        stroke-opacity: 1.0;
+        stroke-dasharray: none;
+      }
+      .ns3 {
+        fill: #D9D9D9;
+        fill-opacity: 0.5019608;
+        stroke: #000000;
+        stroke-width: 2.0;
+        stroke-opacity: 1.0;
+        stroke-dasharray: none;
+      }
+      .ns35 {
+        fill: #BFBFFF;
+        fill-opacity: 0.5019608;
+        stroke: #000000;
+        stroke-width: 2.0;
+        stroke-opacity: 1.0;
+        stroke-dasharray: none;
+      }
+      .ns4_text {
+        font-family: arial, sans-serif;
+        font-size: 14.0px;
+        text-anchor: middle;
+        fill: #000000;
+        fill-opacity: 1.0;
+      }
+      .ns3_text {
+        font-family: arial, sans-serif;
+        font-size: 14.0px;
+        text-anchor: middle;
+        fill: #000000;
+        fill-opacity: 1.0;
+      }
+      .ns35_text {
+        font-family: arial, sans-serif;
+        font-size: 14.0px;
+        text-anchor: middle;
+        fill: #000000;
+        fill-opacity: 1.0;
+      }
+      .es3 {
+        fill: #000000;
+        fill-opacity: 1.0;
+        stroke: #000000;
+        stroke-width: 2.0;
+        stroke-opacity: 1.0;
+        stroke-dasharray: none;
+      }
+      .es3_text {
+        font-family: sans-serif;
+        fill: #000000;
+        font-size: 14.0px;
+        text-anchor: middle;
+        fill-opacity: 1.0;
+      }
+    ]]>
+  </style>
+<g>
+  <path d="M 117.328125 124.01764 L 166.14844 124.01764" class="es3" style="fill: none;"/>
+  <path d="M 166.14844 124.01764 L 153.64844 127.76764 L 153.64844 120.26764 L 166.14844 124.01764" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 271.1797 124.01764 L 534.664 124.01764 L 534.66406 344.40826" class="es3" style="fill: none;"/>
+  <path d="M 534.66406 344.40826 L 530.91406 331.90826 L 538.41406 331.90826 L 534.66406 344.40826" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 272.32813 250.01764 L 332.14844 250.01764" class="es3" style="fill: none;"/>
+  <path d="M 332.14844 250.01764 L 319.64844 253.76764 L 319.64844 246.26764 L 332.14844 250.01764" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 437.1797 250.01764 L 534.66406 250.01764 L 534.66406 344.40826" class="es3" style="fill: none;"/>
+  <path d="M 534.66406 344.40826 L 530.91406 331.90826 L 538.41406 331.90826 L 534.66406 344.40826" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 384.66406 291.4239 L 384.66406 336.20514" class="es3" style="fill: none;"/>
+  <path d="M 384.66406 336.20514 L 380.91406 323.70514 L 388.41406 323.70514 L 384.66406 336.20514" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 63.664063 165.42389 L 63.664063 422.73346 L 534.66406 422.73346 L 534.66406 454.8145" class="es3" style="fill: none;"/>
+  <path d="M 534.66406 454.8145 L 530.91406 442.3145 L 538.41406 442.3145 L 534.66406 454.8145" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 218.66406 165.42389 L 218.66406 208.61139" class="es3" style="fill: none;"/>
+  <path d="M 218.66406 208.61139 L 214.91406 196.11139 L 222.41406 196.11139 L 218.66406 208.61139" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 534.66406 380.8145 L 534.66406 454.8145" class="es3" style="fill: none;"/>
+  <path d="M 534.66406 454.8145 L 530.91406 442.3145 L 538.41406 442.3145 L 534.66406 454.8145" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 384.66406 389.01764 L 384.66406 422.73346 L 534.664 422.73346 L 534.66406 454.8145" class="es3" style="fill: none;"/>
+  <path d="M 534.66406 454.8145 L 530.91406 442.3145 L 538.41406 442.3145 L 534.66406 454.8145" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 218.66406 291.4239 L 218.66406 422.73346 L 534.664 422.73346 L 534.66406 454.8145" class="es3" style="fill: none;"/>
+  <path d="M 534.66406 454.8145 L 530.91406 442.3145 L 538.41406 442.3145 L 534.66406 454.8145" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 63.664063 46.40625 L 63.664063 82.61139" class="es3" style="fill: none;"/>
+  <path d="M 63.664063 82.61139 L 59.914063 70.11139 L 67.41406 70.11139 L 63.664063 82.61139" class="es3" stroke-dasharray="none"/>
+</g>
+<g>
+  <ellipse cx="63.664063" cy="28.203125" rx="27.351563" ry="18.203125" class="ns4"/>
+  <text x="63.664063" y="16.582031" class="ns4_text">
+<tspan x="63.664063" y="32.98828" xml:space="preserve" style="">begin</tspan>
+  </text>
+</g>
+<g>
+  <path d="M 63.664063 82.61139 L 117.328125 124.01764 L 63.664063 165.42389 L 10.0 124.01764 z" class="ns35"/>
+  <text x="63.664063" y="104.19342" class="ns35_text">
+<tspan x="63.664063" y="120.59967" xml:space="preserve" style="">last </tspan>
+<tspan xml:space="preserve" style="">build</tspan>
+<tspan x="63.664063" y="137.00592" xml:space="preserve" style="">&gt; </tspan>
+<tspan xml:space="preserve" style="">24h</tspan>
+  </text>
+</g>
+<g>
+  <path d="M 218.66406 82.61139 L 271.1797 124.01764 L 218.66406 165.42389 L 166.14844 124.01764 z" class="ns35"/>
+  <text x="218.66406" y="104.19342" class="ns35_text">
+<tspan x="218.66406" y="120.59967" xml:space="preserve" style="">commits</tspan>
+<tspan x="218.66406" y="137.00592" xml:space="preserve" style="">&gt;= </tspan>
+<tspan xml:space="preserve" style="">10</tspan>
+  </text>
+</g>
+<g>
+  <rect x="486.17188" y="344.40826" width="96.984375" height="36.40625" class="ns3"/>
+  <text x="534.66406" y="350.9903" class="ns3_text">
+<tspan x="534.66406" y="367.39655" xml:space="preserve" style="">build </tspan>
+<tspan xml:space="preserve" style="">docker</tspan>
+  </text>
+</g>
+<g>
+  <path d="M 218.66406 208.61139 L 272.32813 250.01764 L 218.66406 291.4239 L 165.0 250.01764 z" class="ns35"/>
+  <text x="218.66406" y="230.19342" class="ns35_text">
+<tspan x="218.66406" y="246.59967" xml:space="preserve" style="">last </tspan>
+<tspan xml:space="preserve" style="">build</tspan>
+<tspan x="218.66406" y="263.00592" xml:space="preserve" style="">&gt; </tspan>
+<tspan xml:space="preserve" style="">7day</tspan>
+  </text>
+</g>
+<g>
+  <path d="M 384.66406 208.61139 L 437.1797 250.01764 L 384.66406 291.4239 L 332.14844 250.01764 z" class="ns35"/>
+  <text x="384.66406" y="230.19342" class="ns35_text">
+<tspan x="384.66406" y="246.59967" xml:space="preserve" style="">commits</tspan>
+<tspan x="384.66406" y="263.00592" xml:space="preserve" style="">&gt;= </tspan>
+<tspan xml:space="preserve" style="">1</tspan>
+  </text>
+</g>
+<g>
+  <rect x="341.42188" y="336.20514" width="86.484375" height="52.8125" class="ns3"/>
+  <text x="384.66406" y="342.78717" class="ns3_text">
+<tspan x="384.66406" y="359.19342" xml:space="preserve" style="">alert</tspan>
+<tspan x="384.66406" y="375.59967" xml:space="preserve" style="">&quot;inactivity&quot;</tspan>
+  </text>
+</g>
+<g>
+  <ellipse cx="534.66406" cy="473.01764" rx="21.617188" ry="18.203125" class="ns4"/>
+  <text x="534.66406" y="461.39655" class="ns4_text">
+<tspan x="534.66406" y="477.8028" xml:space="preserve" style="">end</tspan>
+  </text>
+</g>
+<g>
+  <text x="132.16406" y="112.396545" class="es3_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="132.16406" y="128.8028" xml:space="preserve" style="">yes</tspan>
+  </text>
+  <text x="132.16406" y="112.396545" class="es3_text">
+<tspan x="132.16406" y="128.8028" xml:space="preserve" style="">yes</tspan>
+  </text>
+</g>
+<g>
+  <text x="286.01563" y="112.396545" class="es3_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="286.01563" y="128.8028" xml:space="preserve" style="">yes</tspan>
+  </text>
+  <text x="286.01563" y="112.396545" class="es3_text">
+<tspan x="286.01563" y="128.8028" xml:space="preserve" style="">yes</tspan>
+  </text>
+</g>
+<g>
+  <text x="287.16406" y="238.39655" class="es3_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="287.16406" y="254.8028" xml:space="preserve" style="">yes</tspan>
+  </text>
+  <text x="287.16406" y="238.39655" class="es3_text">
+<tspan x="287.16406" y="254.8028" xml:space="preserve" style="">yes</tspan>
+  </text>
+</g>
+<g>
+  <text x="452.01563" y="238.39655" class="es3_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="452.01563" y="254.8028" xml:space="preserve" style="">yes</tspan>
+  </text>
+  <text x="452.01563" y="238.39655" class="es3_text">
+<tspan x="452.01563" y="254.8028" xml:space="preserve" style="">yes</tspan>
+  </text>
+</g>
+<g>
+  <text x="384.66406" y="292.00592" class="es3_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="384.66406" y="308.41217" xml:space="preserve" style="">no</tspan>
+  </text>
+  <text x="384.66406" y="292.00592" class="es3_text">
+<tspan x="384.66406" y="308.41217" xml:space="preserve" style="">no</tspan>
+  </text>
+</g>
+<g>
+  <text x="63.664063" y="166.00592" class="es3_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="63.664063" y="182.41217" xml:space="preserve" style="">no</tspan>
+  </text>
+  <text x="63.664063" y="166.00592" class="es3_text">
+<tspan x="63.664063" y="182.41217" xml:space="preserve" style="">no</tspan>
+  </text>
+</g>
+<g>
+  <text x="218.66406" y="166.00592" class="es3_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="218.66406" y="182.41217" xml:space="preserve" style="">no</tspan>
+  </text>
+  <text x="218.66406" y="166.00592" class="es3_text">
+<tspan x="218.66406" y="182.41217" xml:space="preserve" style="">no</tspan>
+  </text>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+  <text x="218.66406" y="292.00592" class="es3_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="218.66406" y="308.41217" xml:space="preserve" style="">no</tspan>
+  </text>
+  <text x="218.66406" y="292.00592" class="es3_text">
+<tspan x="218.66406" y="308.41217" xml:space="preserve" style="">no</tspan>
+  </text>
+</g>
+<g>
+</g>
+</svg>

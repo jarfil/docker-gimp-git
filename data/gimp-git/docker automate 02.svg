@@ -1,0 +1,320 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="717.59375" height="758.4747">
+  <style type="text/css">
+    <![CDATA[
+      .ns2 {
+        fill: #FFFF7F;
+        fill-opacity: 0.5019608;
+        stroke: #000000;
+        stroke-width: 2.0;
+        stroke-opacity: 1.0;
+        stroke-dasharray: none;
+      }
+      .ns1 {
+        fill: #D9D9D9;
+        fill-opacity: 0.5019608;
+        stroke: #000000;
+        stroke-width: 2.0;
+        stroke-opacity: 1.0;
+        stroke-dasharray: none;
+      }
+      .ns35 {
+        fill: #BFBFFF;
+        fill-opacity: 0.5019608;
+        stroke: #000000;
+        stroke-width: 2.0;
+        stroke-opacity: 1.0;
+        stroke-dasharray: none;
+      }
+      .ns2_text {
+        font-family: arial, sans-serif;
+        font-size: 14.0px;
+        text-anchor: middle;
+        fill: #000000;
+        fill-opacity: 1.0;
+      }
+      .ns1_text {
+        font-family: arial, sans-serif;
+        font-size: 14.0px;
+        text-anchor: middle;
+        fill: #000000;
+        fill-opacity: 1.0;
+      }
+      .ns35_text {
+        font-family: arial, sans-serif;
+        font-size: 14.0px;
+        text-anchor: middle;
+        fill: #000000;
+        fill-opacity: 1.0;
+      }
+      .es2 {
+        fill: #000000;
+        fill-opacity: 1.0;
+        stroke: #000000;
+        stroke-width: 2.0;
+        stroke-opacity: 1.0;
+        stroke-dasharray: none;
+      }
+      .es1 {
+        fill: #000000;
+        fill-opacity: 1.0;
+        stroke: #000000;
+        stroke-width: 2.0;
+        stroke-opacity: 1.0;
+        stroke-dasharray: none;
+      }
+      .es1_text {
+        font-family: sans-serif;
+        fill: #000000;
+        font-size: 14.0px;
+        text-anchor: middle;
+        fill-opacity: 1.0;
+      }
+    ]]>
+  </style>
+<g>
+  <path d="M 241.76563 381.27155 L 280.21094 381.27155" class="es1" style="fill: none;"/>
+  <path d="M 280.21094 381.27155 L 267.71094 385.02155 L 267.71094 377.52155 L 280.21094 381.27155" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 405.9922 381.27155 L 659.1015 381.27155 L 659.10156 601.6622" class="es1" style="fill: none;"/>
+  <path d="M 659.10156 601.6622 L 655.35156 589.1622 L 662.85156 589.1622 L 659.10156 601.6622" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 396.76563 507.27155 L 450.14844 507.27155" class="es1" style="fill: none;"/>
+  <path d="M 450.14844 507.27155 L 437.64844 511.02155 L 437.64844 503.52155 L 450.14844 507.27155" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 568.0547 507.27155 L 659.10156 507.27155 L 659.10156 601.6622" class="es1" style="fill: none;"/>
+  <path d="M 659.10156 601.6622 L 655.35156 589.1622 L 662.85156 589.1622 L 659.10156 601.6622" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 509.10156 548.6778 L 509.10156 593.45905" class="es1" style="fill: none;"/>
+  <path d="M 509.10156 593.45905 L 505.35156 580.95905 L 512.85156 580.95905 L 509.10156 593.45905" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 188.10156 422.6778 L 188.10156 679.98737 L 659.10156 679.98737 L 659.10156 712.0684" class="es1" style="fill: none;"/>
+  <path d="M 659.10156 712.0684 L 655.35156 699.5684 L 662.85156 699.5684 L 659.10156 712.0684" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 343.10156 422.6778 L 343.10156 465.8653" class="es1" style="fill: none;"/>
+  <path d="M 343.10156 465.8653 L 339.35156 453.3653 L 346.85156 453.3653 L 343.10156 465.8653" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 659.10156 638.0684 L 659.10156 712.0684" class="es1" style="fill: none;"/>
+  <path d="M 659.10156 712.0684 L 655.35156 699.5684 L 662.85156 699.5684 L 659.10156 712.0684" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 509.10156 646.27155 L 509.10156 679.98737 L 659.1015 679.98737 L 659.10156 712.0684" class="es1" style="fill: none;"/>
+  <path d="M 659.10156 712.0684 L 655.35156 699.5684 L 662.85156 699.5684 L 659.10156 712.0684" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 343.10156 548.6778 L 343.10156 679.98737 L 659.1015 679.98737 L 659.10156 712.0684" class="es1" style="fill: none;"/>
+  <path d="M 659.10156 712.0684 L 655.35156 699.5684 L 662.85156 699.5684 L 659.10156 712.0684" class="es1" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 188.10156 46.40625 L 188.10156 79.320465 L 85.375 79.320465 L 85.375 112.22467 L 85.375 112.23468" class="es2" style="fill: none;"/>
+  <path d="M 85.375 112.23468 L 81.625 99.73468 L 89.125 99.73468 L 85.375 112.23468" class="es2" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 260.25507 173.2503 L 260.25507 200.76184 L 232.65634 200.76184 L 232.65634 228.26337 L 232.65634 228.27338" class="es2" style="fill: none;"/>
+  <path d="M 232.65634 228.27338 L 228.90634 215.77338 L 236.40634 215.77338 L 232.65634 228.27338" class="es2" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 318.57764 173.2503 L 318.57764 200.76184 L 347.17938 200.76184 L 347.17938 228.26337 L 347.17938 228.27338" class="es2" style="fill: none;"/>
+  <path d="M 347.17938 228.27338 L 343.42938 215.77338 L 350.92938 215.77338 L 347.17938 228.27338" class="es2" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 188.10156 46.40625 L 188.10156 79.320465 L 289.0858 79.320465 L 289.0858 120.427795 L 289.0858 120.437805" class="es2" style="fill: none;"/>
+  <path d="M 289.0858 120.437805 L 285.3358 107.937805 L 292.8358 107.937805 L 289.0858 120.437805" class="es2" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 85.375 181.45343 L 85.375 303.65466 L 188.10156 303.65466 L 188.10156 339.8553 L 188.10156 339.8653" class="es2" style="fill: none;"/>
+  <path d="M 188.10156 339.8653 L 184.35156 327.3653 L 191.85156 327.3653 L 188.10156 339.8653" class="es2" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 232.65634 281.08588 L 232.65634 303.65466 L 188.10156 303.65466 L 188.10156 339.8553 L 188.10156 339.8653" class="es2" style="fill: none;"/>
+  <path d="M 188.10156 339.8653 L 184.35156 327.3653 L 191.85156 327.3653 L 188.10156 339.8653" class="es2" stroke-dasharray="none"/>
+</g>
+<g>
+  <path d="M 347.17938 281.08588 L 347.17938 303.65466 L 188.10156 303.65466 L 188.10156 339.8553 L 188.10156 339.8653" class="es2" style="fill: none;"/>
+  <path d="M 188.10156 339.8653 L 184.35156 327.3653 L 191.85156 327.3653 L 188.10156 339.8653" class="es2" stroke-dasharray="none"/>
+</g>
+<g>
+  <ellipse cx="188.10156" cy="28.203125" rx="27.351563" ry="18.203125" class="ns2"/>
+  <text x="188.10156" y="16.582031" class="ns2_text">
+<tspan x="188.10156" y="32.98828" xml:space="preserve" style="">begin</tspan>
+  </text>
+</g>
+<g>
+  <path d="M 188.10156 339.8653 L 241.76563 381.27155 L 188.10156 422.6778 L 134.4375 381.27155 z" class="ns35"/>
+  <text x="188.10156" y="361.44733" class="ns35_text">
+<tspan x="188.10156" y="377.85358" xml:space="preserve" style="">last </tspan>
+<tspan xml:space="preserve" style="">build</tspan>
+<tspan x="188.10156" y="394.25983" xml:space="preserve" style="">&gt; </tspan>
+<tspan xml:space="preserve" style="">24h</tspan>
+  </text>
+</g>
+<g>
+  <path d="M 343.10156 339.8653 L 405.9922 381.27155 L 343.10156 422.6778 L 280.21094 381.27155 z" class="ns35"/>
+  <text x="343.10156" y="361.44733" class="ns35_text">
+<tspan x="343.10156" y="377.85358" xml:space="preserve" style="">commit_10</tspan>
+<tspan x="343.10156" y="394.25983" xml:space="preserve" style="">&lt;= </tspan>
+<tspan xml:space="preserve" style="">last </tspan>
+<tspan xml:space="preserve" style="">build</tspan>
+  </text>
+</g>
+<g>
+  <rect x="610.6094" y="601.6622" width="96.984375" height="36.40625" class="ns1"/>
+  <text x="659.10156" y="608.2442" class="ns1_text">
+<tspan x="659.10156" y="624.65045" xml:space="preserve" style="">build </tspan>
+<tspan xml:space="preserve" style="">docker</tspan>
+  </text>
+</g>
+<g>
+  <path d="M 343.10156 465.8653 L 396.76563 507.27155 L 343.10156 548.6778 L 289.4375 507.27155 z" class="ns35"/>
+  <text x="343.10156" y="487.44733" class="ns35_text">
+<tspan x="343.10156" y="503.85358" xml:space="preserve" style="">last </tspan>
+<tspan xml:space="preserve" style="">build</tspan>
+<tspan x="343.10156" y="520.2598" xml:space="preserve" style="">&gt; </tspan>
+<tspan xml:space="preserve" style="">7day</tspan>
+  </text>
+</g>
+<g>
+  <path d="M 509.10156 465.8653 L 568.0547 507.27155 L 509.10156 548.6778 L 450.14844 507.27155 z" class="ns35"/>
+  <text x="509.10156" y="487.44733" class="ns35_text">
+<tspan x="509.10156" y="503.85358" xml:space="preserve" style="">commit_1</tspan>
+<tspan x="509.10156" y="520.2598" xml:space="preserve" style="">&lt; </tspan>
+<tspan xml:space="preserve" style="">last </tspan>
+<tspan xml:space="preserve" style="">build</tspan>
+  </text>
+</g>
+<g>
+  <rect x="465.85938" y="593.45905" width="86.484375" height="52.8125" class="ns1"/>
+  <text x="509.10156" y="600.0411" class="ns1_text">
+<tspan x="509.10156" y="616.4473" xml:space="preserve" style="">alert</tspan>
+<tspan x="509.10156" y="632.8536" xml:space="preserve" style="">&quot;inactivity&quot;</tspan>
+  </text>
+</g>
+<g>
+  <ellipse cx="659.10156" cy="730.27155" rx="21.617188" ry="18.203125" class="ns2"/>
+  <text x="659.10156" y="718.65045" class="ns2_text">
+<tspan x="659.10156" y="735.0567" xml:space="preserve" style="">end</tspan>
+  </text>
+</g>
+<g>
+  <rect x="10.0" y="112.23468" width="150.75" height="69.21875" class="ns1"/>
+  <text x="85.375" y="118.81671" class="ns1_text">
+<tspan x="85.375" y="135.22296" xml:space="preserve" style="">get</tspan>
+<tspan x="85.375" y="151.62921" xml:space="preserve" style="">docker </tspan>
+<tspan xml:space="preserve" style="">hub </tspan>
+<tspan xml:space="preserve" style="">last </tspan>
+<tspan xml:space="preserve" style="">build</tspan>
+<tspan x="85.375" y="168.03546" xml:space="preserve" style="">days</tspan>
+  </text>
+</g>
+<g>
+  <rect x="224.31235" y="120.437805" width="129.5469" height="52.8125" class="ns1"/>
+  <text x="289.08582" y="127.01984" class="ns1_text">
+<tspan x="289.08582" y="143.42609" xml:space="preserve" style="">get</tspan>
+<tspan x="289.08582" y="159.83234" xml:space="preserve" style="">gimp </tspan>
+<tspan xml:space="preserve" style="">git </tspan>
+<tspan xml:space="preserve" style="">commits</tspan>
+  </text>
+</g>
+<g>
+  <rect x="191.79697" y="228.27338" width="81.71875" height="52.8125" class="ns1"/>
+  <text x="232.65634" y="234.85541" class="ns1_text">
+<tspan x="232.65634" y="251.26166" xml:space="preserve" style="">commit_1</tspan>
+<tspan x="232.65634" y="267.6679" xml:space="preserve" style="">days</tspan>
+  </text>
+</g>
+<g>
+  <rect x="302.3825" y="228.27338" width="89.59375" height="52.8125" class="ns1"/>
+  <text x="347.17938" y="234.85541" class="ns1_text">
+<tspan x="347.17938" y="251.26166" xml:space="preserve" style="">commit_10</tspan>
+<tspan x="347.17938" y="267.6679" xml:space="preserve" style="">days</tspan>
+  </text>
+</g>
+<g>
+  <text x="256.60156" y="369.65045" class="es1_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="256.60156" y="386.0567" xml:space="preserve" style="">yes</tspan>
+  </text>
+  <text x="256.60156" y="369.65045" class="es1_text">
+<tspan x="256.60156" y="386.0567" xml:space="preserve" style="">yes</tspan>
+  </text>
+</g>
+<g>
+  <text x="420.82813" y="369.65045" class="es1_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="420.82813" y="386.0567" xml:space="preserve" style="">yes</tspan>
+  </text>
+  <text x="420.82813" y="369.65045" class="es1_text">
+<tspan x="420.82813" y="386.0567" xml:space="preserve" style="">yes</tspan>
+  </text>
+</g>
+<g>
+  <text x="411.60156" y="495.65045" class="es1_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="411.60156" y="512.0567" xml:space="preserve" style="">yes</tspan>
+  </text>
+  <text x="411.60156" y="495.65045" class="es1_text">
+<tspan x="411.60156" y="512.0567" xml:space="preserve" style="">yes</tspan>
+  </text>
+</g>
+<g>
+  <text x="582.8906" y="495.65045" class="es1_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="582.8906" y="512.0567" xml:space="preserve" style="">yes</tspan>
+  </text>
+  <text x="582.8906" y="495.65045" class="es1_text">
+<tspan x="582.8906" y="512.0567" xml:space="preserve" style="">yes</tspan>
+  </text>
+</g>
+<g>
+  <text x="509.10156" y="549.2598" class="es1_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="509.10156" y="565.6661" xml:space="preserve" style="">no</tspan>
+  </text>
+  <text x="509.10156" y="549.2598" class="es1_text">
+<tspan x="509.10156" y="565.6661" xml:space="preserve" style="">no</tspan>
+  </text>
+</g>
+<g>
+  <text x="188.10156" y="423.25983" class="es1_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="188.10156" y="439.66608" xml:space="preserve" style="">no</tspan>
+  </text>
+  <text x="188.10156" y="423.25983" class="es1_text">
+<tspan x="188.10156" y="439.66608" xml:space="preserve" style="">no</tspan>
+  </text>
+</g>
+<g>
+  <text x="343.10156" y="423.25983" class="es1_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="343.10156" y="439.66608" xml:space="preserve" style="">no</tspan>
+  </text>
+  <text x="343.10156" y="423.25983" class="es1_text">
+<tspan x="343.10156" y="439.66608" xml:space="preserve" style="">no</tspan>
+  </text>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+  <text x="343.10156" y="549.2598" class="es1_text" style="fill:none; stroke-width:4.0;stroke:#FFFFFF;" stroke-linejoin="round">
+<tspan x="343.10156" y="565.6661" xml:space="preserve" style="">no</tspan>
+  </text>
+  <text x="343.10156" y="549.2598" class="es1_text">
+<tspan x="343.10156" y="565.6661" xml:space="preserve" style="">no</tspan>
+  </text>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
