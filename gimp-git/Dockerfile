@@ -1,4 +1,5 @@
 FROM ubuntu:vivid
+MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
 # compile
 ADD make_gimp.sh /root/make_gimp.sh
