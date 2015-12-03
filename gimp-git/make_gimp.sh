@@ -41,7 +41,7 @@ apt-get install -y \
 	liblcms2-dev \
 	libmng2 \
 	libmng-dev \
-	libopenexr6 \
+	libopenexr22 \
 	libopenexr-dev \
 	libpoppler-glib8 \
 	libpoppler-glib-dev \

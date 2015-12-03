@@ -1,4 +1,4 @@
-FROM ubuntu:vivid
+FROM ubuntu:wily
 MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
 # compile
