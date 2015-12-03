@@ -66,6 +66,12 @@ apt-get install -y \
 	xsltproc \
 	--no-install-recommends || exit
 
+apt-get install -y \
+	libjson-c-dev \
+	libjson-c2 \
+	scons \
+	--no-install-recommends || exit
+
 unset DEBIAN_FRONTEND
 
 # compile dir
@@ -82,6 +88,7 @@ mkdir -p $SRCDIR
 cd $SRCDIR
 git clone git://git.gnome.org/babl || exit
 git clone git://git.gnome.org/gegl || exit
+git clone https://github.com/mypaint/libmypaint.git || exit
 git clone git://git.gnome.org/gimp || exit
 
 # compile and install
@@ -97,6 +104,11 @@ cd $SRCDIR/gegl
 ./autogen.sh --prefix=$PREFIX || exit
 make -j4 || exit
 make install || exit
+
+ldconfig || exit
+
+cd $SRCDIR/libmypaint
+scons install enable_gegl=true
 
 ldconfig || exit
 
