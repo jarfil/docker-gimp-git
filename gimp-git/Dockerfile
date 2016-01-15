@@ -9,4 +9,3 @@ RUN ["/bin/bash", "-c", "/root/make_gimp.sh"]
 # entry point
 WORKDIR /
 ENTRYPOINT /usr/local/bin/gimp
-

@@ -2,7 +2,7 @@
 
 # dev setup
 
-export DEBIAN_FRONTEND=noninteractive 
+export DEBIAN_FRONTEND=noninteractive
 
 apt-get -y update || exit
 apt-get -y upgrade || exit
@@ -125,9 +125,7 @@ ln -s `ls /usr/local/bin/gimp-?.* | head -n2` /usr/local/bin/gimp || exit
 
 # dev cleanup
 
-rm -rf $SRCDIR/babl
-rm -rf $SRCDIR/gegl
-rm -rf $SRCDIR/gimp
+rm -rf $SRCDIR/*
 
 dpkg -l | grep -- -dev | cut -d " " -f 3 | cut -d ":" -f 1 | sort -n | uniq | xargs apt-get -y purge
 

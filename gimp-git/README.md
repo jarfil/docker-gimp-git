@@ -1,6 +1,6 @@
 Latest version of Gimp compiled from git master.
 
-Based on Ubuntu Vivid
+Based on Ubuntu Wily
 
 ## Usage
 
