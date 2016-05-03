@@ -61,6 +61,8 @@ apt-get install -y \
 	python-dev \
 	python-gtk2 \
 	python-gtk2-dev \
+	python-cairo \
+	python-cairo-dev \
 	ruby \
 	valac \
 	xsltproc \
