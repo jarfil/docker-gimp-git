@@ -110,7 +110,10 @@ make install || exit
 ldconfig || exit
 
 cd $SRCDIR/libmypaint
-scons install enable_gegl=true
+#scons install enable_gegl=true
+./autogen.sh
+./configure
+make distcheck
 
 ldconfig || exit
 
