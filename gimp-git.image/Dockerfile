@@ -1,4 +1,4 @@
-FROM ubuntu:wily
+FROM ubuntu:xenial
 MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
 # compile
