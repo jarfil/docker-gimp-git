@@ -8,14 +8,61 @@ apt-get -y update || exit
 apt-get -y upgrade || exit
 apt-get -y autoremove || exit
 
+# tools
+apt-get install -y \
+	ca-certificates \
+	git-core \
+	--no-install-recommends || exit
+
+# common depends
 apt-get install -y \
 	autoconf \
 	automake \
 	build-essential \
-	gettext \
-	git-core \
-	gtk-doc-tools \
 	intltool \
+	libglib2.0-0 \
+	libglib2.0-dev \
+	libtool \
+	--no-install-recommends || exit
+	
+# babl depends
+apt-get install -y \
+	--no-install-recommends || exit
+
+# gegl depends
+# TODO: enable more
+apt-get install -y \
+	gtk-doc-tools \
+	libgexiv2-2 \
+	libgexiv2-dev \
+	libgs9 \
+	libgs-dev \
+	libjasper1 \
+	libjasper-dev \
+	libjson-glib-1.0-0 \
+	libjson-glib-dev \
+	libopenexr22 \
+	libopenexr-dev \
+	librsvg2-2 \
+	librsvg2-dev \
+	python \
+	python-dev \
+	python-gtk2 \
+	python-gtk2-dev \
+	python-cairo \
+	python-cairo-dev \
+	ruby \
+	--no-install-recommends || exit
+
+# libmypaint depends
+apt-get install -y \
+	libjson-c-dev \
+	libjson-c2 \
+	--no-install-recommends || exit
+
+# gimp depends
+apt-get install -y \
+	gettext \
 	libaa1 \
 	libaa1-dev \
 	libasound2 \
@@ -24,32 +71,17 @@ apt-get install -y \
 	libbz2-dev \
 	libexif12 \
 	libexif-dev \
-	libgexiv2-2 \
-	libgexiv2-dev \
-	libglib2.0-0 \
-	libglib2.0-dev \
-	libgs9 \
-	libgs-dev \
 	libgtk2.0-0 \
 	libgtk2.0-bin \
 	libgtk2.0-dev \
-	libjasper1 \
-	libjasper-dev \
-	libjson-glib-1.0-0 \
-	libjson-glib-dev \
 	liblcms2-2 \
 	liblcms2-dev \
 	libmng2 \
 	libmng-dev \
-	libopenexr22 \
-	libopenexr-dev \
 	libpoppler-glib8 \
 	libpoppler-glib-dev \
-	librsvg2-2 \
-	librsvg2-dev \
 	libtiff5 \
 	libtiff5-dev \
-	libtool \
 	libwebkitgtk-1.0-0 \
 	libwebkitgtk-dev \
 	libwmf0.2-7 \
@@ -57,23 +89,10 @@ apt-get install -y \
 	libxpm4 \
 	libxpm-dev \
 	openexr \
-	python \
-	python-dev \
-	python-gtk2 \
-	python-gtk2-dev \
-	python-cairo \
-	python-cairo-dev \
-	ruby \
 	valac \
 	xsltproc \
 	--no-install-recommends || exit
-
-apt-get install -y \
-	libjson-c-dev \
-	libjson-c2 \
-	scons \
-	--no-install-recommends || exit
-
+	
 unset DEBIAN_FRONTEND
 
 # compile dir
@@ -95,6 +114,7 @@ git clone git://git.gnome.org/gimp || exit
 
 # compile and install
 
+# babl
 cd $SRCDIR/babl
 ./autogen.sh --prefix=$PREFIX || exit
 make -j4 || exit
@@ -102,6 +122,8 @@ make install || exit
 
 ldconfig || exit
 
+# gegl
+# depends: babl
 cd $SRCDIR/gegl
 ./autogen.sh --prefix=$PREFIX || exit
 make -j4 || exit
@@ -109,14 +131,17 @@ make install || exit
 
 ldconfig || exit
 
+# libmypaint
+# depends: gegl
 cd $SRCDIR/libmypaint
-#scons install enable_gegl=true
-./autogen.sh
-./configure
-make distcheck
+./autogen.sh --prefix=$PREFIX || exit
+./configure --enable-gegl || exit
+make -j4 || exit
+make install || exit
 
 ldconfig || exit
 
+# gimp
 cd $SRCDIR/gimp
 ./autogen.sh --prefix=$PREFIX --disable-gtk-doc || exit
 make -j4 || exit
