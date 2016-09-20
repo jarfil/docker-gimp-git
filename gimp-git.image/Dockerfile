@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:yakkety
 MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
 # compile
