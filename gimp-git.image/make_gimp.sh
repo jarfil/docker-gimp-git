@@ -57,7 +57,7 @@ apt-get install -y \
 # libmypaint depends
 apt-get install -y \
 	libjson-c-dev \
-	libjson-c2 \
+	libjson-c3 \
 	--no-install-recommends || exit
 
 # gimp depends
