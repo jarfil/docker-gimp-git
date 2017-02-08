@@ -7,6 +7,15 @@ Based on Ubuntu Wily
 Local X11 server
 > `docker run -it --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix jarfil/gimp-git`
 
+If you get an error like this:
+
+    No protocol specified
+    Cannot open display:
+
+Try running this first:
+
+> `xhost local:root`
+
 Remote SSH into docker host, low isolation
 
 > `docker run -it --rm --net=host -e DISPLAY=$DISPLAY -v $HOME:/hosthome:ro -e XAUTHORITY=/hosthome/.Xauthority jarfil/gimp-git`
