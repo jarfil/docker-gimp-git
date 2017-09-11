@@ -1,4 +1,4 @@
-FROM ubuntu:yakkety
+FROM debian:testing
 MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
 # compile
