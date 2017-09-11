@@ -119,7 +119,7 @@ git clone git://git.gnome.org/gimp || exit
 # babl
 cd $SRCDIR/babl
 ./autogen.sh --prefix=$PREFIX || exit
-make -j4 || exit
+make -j`nproc` || exit
 make install || exit
 
 ldconfig || exit
@@ -128,7 +128,7 @@ ldconfig || exit
 # depends: babl
 cd $SRCDIR/gegl
 ./autogen.sh --prefix=$PREFIX || exit
-make -j4 || exit
+make -j`nproc` || exit
 make install || exit
 
 ldconfig || exit
@@ -138,7 +138,7 @@ ldconfig || exit
 cd $SRCDIR/libmypaint
 ./autogen.sh --prefix=$PREFIX || exit
 ./configure --enable-gegl || exit
-make -j4 || exit
+make -j`nproc` || exit
 make install || exit
 
 ldconfig || exit
@@ -146,7 +146,7 @@ ldconfig || exit
 # gimp
 cd $SRCDIR/gimp
 ./autogen.sh --prefix=$PREFIX --disable-gtk-doc || exit
-make -j4 || exit
+make -j`nproc` || exit
 make install || exit
 
 ldconfig || exit
