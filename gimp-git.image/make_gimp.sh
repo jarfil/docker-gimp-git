@@ -37,8 +37,6 @@ apt-get install -y \
 	libgexiv2-dev \
 	libgs9 \
 	libgs-dev \
-	libjasper1 \
-	libjasper-dev \
 	libjson-glib-1.0-0 \
 	libjson-glib-dev \
 	libopenexr22 \
