@@ -74,7 +74,7 @@ apt-get install -y \
 	libgtk2.0-dev \
 	liblcms2-2 \
 	liblcms2-dev \
-	libmng2 \
+	libmng1 \
 	libmng-dev \
 	libpoppler-glib8 \
 	libpoppler-glib-dev \
