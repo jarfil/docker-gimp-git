@@ -82,6 +82,8 @@ apt-get install -y \
 	libtiff5-dev \
 	libwebkitgtk-1.0-0 \
 	libwebkitgtk-dev \
+	libwebp6 \
+	libwebp-dev \
 	libwmf0.2-7 \
 	libwmf-dev \
 	libxpm4 \
