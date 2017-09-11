@@ -12,6 +12,7 @@ apt-get -y autoremove || exit
 apt-get install -y \
 	ca-certificates \
 	git-core \
+	wget \
 	--no-install-recommends || exit
 
 # common depends
@@ -109,7 +110,8 @@ mkdir -p $SRCDIR
 cd $SRCDIR
 git clone git://git.gnome.org/babl || exit
 git clone git://git.gnome.org/gegl || exit
-git clone https://github.com/mypaint/libmypaint.git || exit
+wget https://github.com/mypaint/libmypaint/archive/v1.3.0.tar.gz -O - | tar xz || exit
+mv libmypaint-1.3.0 libmypaint
 git clone git://git.gnome.org/gimp || exit
 
 # compile and install
@@ -159,11 +161,12 @@ rm -rf $SRCDIR/*
 
 dpkg -l | grep -- -dev | cut -d " " -f 3 | cut -d ":" -f 1 | sort -n | uniq | xargs apt-get -y purge
 
-apt-get purge \
+apt-get -y purge \
 	autoconf \
 	automake \
 	build-essential \
-	git-core
+	git-core \
+	wget
 
 apt-get -y autoremove
 apt-get clean
