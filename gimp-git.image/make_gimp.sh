@@ -108,11 +108,11 @@ export SRCDIR=/usr/src/gimp-git
 mkdir -p $SRCDIR
 
 cd $SRCDIR
-git clone git://git.gnome.org/babl || exit
-git clone git://git.gnome.org/gegl || exit
 wget https://github.com/mypaint/libmypaint/archive/v1.3.0.tar.gz -O - | tar xz || exit
 mv libmypaint-1.3.0 libmypaint
-git clone git://git.gnome.org/gimp || exit
+git clone https://gitlab.gnome.org/GNOME/babl.git || exit
+git clone https://gitlab.gnome.org/GNOME/gegl.git || exit
+git clone https://gitlab.gnome.org/GNOME/gimp.git || exit
 
 # compile and install
 
