@@ -108,10 +108,9 @@ export SRCDIR=/usr/src/gimp-git
 mkdir -p $SRCDIR
 
 cd $SRCDIR
-wget https://github.com/mypaint/libmypaint/archive/v1.3.0.tar.gz -O - | tar xz || exit
-mv libmypaint-1.3.0 libmypaint
 git clone https://gitlab.gnome.org/GNOME/babl.git || exit
 git clone https://gitlab.gnome.org/GNOME/gegl.git || exit
+git clone https://github.com/mypaint/libmypaint.git || exit
 git clone https://gitlab.gnome.org/GNOME/gimp.git || exit
 
 # compile and install
@@ -136,8 +135,15 @@ ldconfig || exit
 # libmypaint
 # depends: gegl
 cd $SRCDIR/libmypaint
+
+git checkout libmypaint-v1
+git config --global user.email "auto@example.com"
+git config --global user.name "Automatic"
+# backport for automake 1.16
+git cherry-pick -x 40d9077a80be13942476f164bddfabe842ab2a45
+
 ./autogen.sh --prefix=$PREFIX || exit
-./configure --enable-gegl || exit
+./configure --disable-gegl || exit
 make -j`nproc` || exit
 make install || exit
 
