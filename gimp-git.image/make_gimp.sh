@@ -40,7 +40,7 @@ apt-get install -y \
 	libgs-dev \
 	libjson-glib-1.0-0 \
 	libjson-glib-dev \
-	libopenexr22 \
+	libopenexr23 \
 	libopenexr-dev \
 	librsvg2-2 \
 	librsvg2-dev \
