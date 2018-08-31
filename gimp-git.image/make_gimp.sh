@@ -61,9 +61,12 @@ apt-get install -y \
 
 # gimp depends
 apt-get install -y \
+	autopoint \
 	gettext \
+	gtk-3-examples \
 	libaa1 \
 	libaa1-dev \
+	libappstream-glib-dev \
 	libasound2 \
 	libasound2-dev \
 	libbz2-1.0 \
@@ -73,6 +76,7 @@ apt-get install -y \
 	libgtk2.0-0 \
 	libgtk2.0-bin \
 	libgtk2.0-dev \
+	libgtk-3-dev \
 	liblcms2-2 \
 	liblcms2-dev \
 	libmng1 \
@@ -89,6 +93,7 @@ apt-get install -y \
 	libwmf-dev \
 	libxpm4 \
 	libxpm-dev \
+	mypaint-brushes \
 	openexr \
 	valac \
 	xsltproc \
