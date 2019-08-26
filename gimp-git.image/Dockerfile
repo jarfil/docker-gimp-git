@@ -28,6 +28,8 @@ RUN apt-get install -y \
 	
 # babl depends
 RUN apt-get install -y \
+	gobject-introspection \
+	meson \
 	--no-install-recommends
 
 # gegl depends
@@ -120,9 +122,10 @@ RUN git clone https://gitlab.gnome.org/GNOME/gimp.git
 
 # babl
 WORKDIR $SRCDIR/babl
-RUN ./autogen.sh --prefix=$PREFIX
-RUN make -j`nproc`
-RUN make install
+RUN meson --prefix=$PREFIX build
+WORKDIR $SRCDIR/babl/build
+RUN ninja -j`nproc`
+RUN ninja install
 
 RUN ldconfig
 
