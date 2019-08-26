@@ -85,8 +85,6 @@ apt-get install -y \
 	libpoppler-glib-dev \
 	libtiff5 \
 	libtiff5-dev \
-	libwebkitgtk-1.0-0 \
-	libwebkitgtk-dev \
 	libwebp6 \
 	libwebp-dev \
 	libwmf0.2-7 \
@@ -156,7 +154,7 @@ RUN ldconfig
 
 # gimp
 WORKDIR $SRCDIR/gimp
-RUN ./autogen.sh --prefix=$PREFIX --disable-gtk-doc
+RUN ./autogen.sh --prefix=$PREFIX --disable-gtk-doc --without-webkit
 RUN make -j`nproc`
 RUN make install
 
