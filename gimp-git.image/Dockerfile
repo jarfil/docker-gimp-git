@@ -173,7 +173,7 @@ FROM debian:testing
 MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
 # copy
-COPY --from=builder /usr/local/bin/gimp /usr/local/bin/gimp
+COPY --from=builder /usr/local/ /usr/local/
 
 # entry point
 WORKDIR /
