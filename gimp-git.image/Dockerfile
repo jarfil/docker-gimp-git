@@ -62,7 +62,7 @@ RUN apt-get install -y \
 	--no-install-recommends
 
 # gimp depends
-apt-get install -y \
+RUN apt-get install -y \
 	autopoint \
 	gettext \
 	gtk-3-examples \
