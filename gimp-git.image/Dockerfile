@@ -1,7 +1,5 @@
 FROM debian:testing AS builder
-MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
-# dev setup
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get -y update
@@ -26,15 +24,12 @@ RUN apt-get install -y \
 	libtool \
 	--no-install-recommends
 	
-ENV DEBIAN_FRONTEND=
-
 # compile dir
 
 ENV PREFIX=/usr/local
 ENV PATH=$PREFIX/bin:$PATH
 ENV PKG_CONFIG_PATH=$PREFIX/lib/pkgconfig:$PREFIX/share/pkgconfig
 
-# get sources
 
 ENV SRCDIR=/usr/src/gimp-git
 RUN mkdir -p $SRCDIR
@@ -45,22 +40,18 @@ RUN git clone https://gitlab.gnome.org/GNOME/gegl.git
 RUN git clone https://github.com/mypaint/libmypaint.git
 RUN git clone https://gitlab.gnome.org/GNOME/gimp.git
 
-# babl depends
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	gobject-introspection \
 	meson \
 	--no-install-recommends
 
-# babl
 WORKDIR $SRCDIR/babl
 RUN meson --prefix=$PREFIX build
 WORKDIR $SRCDIR/babl/build
 RUN ninja -j`nproc`
 RUN ninja install
 
-RUN ldconfig
 
-# gegl depends
 # TODO: enable more
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	gtk-doc-tools \
@@ -83,23 +74,17 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	ruby \
 	--no-install-recommends
 
-# gegl
-# depends: babl
 WORKDIR $SRCDIR/gegl
 RUN ./autogen.sh --prefix=$PREFIX
 RUN make -j`nproc`
 RUN make install
 
-RUN ldconfig
 
-# libmypaint depends
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	libjson-c-dev \
 	libjson-c4 \
 	--no-install-recommends
 
-# libmypaint
-# depends: gegl
 WORKDIR $SRCDIR/libmypaint
 
 RUN git checkout libmypaint-v1
@@ -113,9 +98,7 @@ RUN ./configure --disable-gegl
 RUN make -j`nproc`
 RUN make install
 
-RUN ldconfig
 
-# gimp depends
 RUN apt-get install -y \
 	autopoint \
 	gettext \
@@ -153,7 +136,6 @@ RUN apt-get install -y \
 	xsltproc \
 	--no-install-recommends
 
-# gimp
 WORKDIR $SRCDIR/gimp
 RUN ./autogen.sh --prefix=$PREFIX --disable-gtk-doc --without-webkit
 RUN make -j`nproc`
