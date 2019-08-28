@@ -30,8 +30,9 @@ RUN apt-get install -y \
 
 ENV PREFIX=/usr/local
 ENV PATH=$PREFIX/bin:$PATH
-ENV PKG_CONFIG_PATH=$PREFIX/lib/pkgconfig:$PREFIX/share/pkgconfig
+ENV PKG_CONFIG_PATH=$PREFIX/lib/pkgconfig:$PREFIX/share/pkgconfig:/usr/lib/pkgconfig:/usr/share/pkgconfig
 
+# sources dir
 
 ENV SRCDIR=/usr/src/gimp-git
 RUN mkdir -p $SRCDIR
