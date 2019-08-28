@@ -39,6 +39,8 @@ RUN mkdir -p $SRCDIR
 
 WORKDIR $SRCDIR
 
+RUN ldconfig
+
 
 # ====
 
@@ -48,6 +50,8 @@ RUN git clone https://gitlab.gnome.org/GNOME/babl.git
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	--no-install-recommends
+
+RUN ldconfig
 
 WORKDIR $SRCDIR/babl
 RUN meson --prefix=$PREFIX build
@@ -79,6 +83,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 
 COPY --from=build-babl /usr/local /usr/local
 COPY --from=build-babl /usr/local/share/gir-1.0 /usr/share/gir-1.0
+
+RUN ldconfig
 
 WORKDIR $SRCDIR/gegl
 RUN meson --prefix=$PREFIX build
@@ -142,12 +148,12 @@ COPY --from=build-babl /usr/local /usr/local
 COPY --from=build-gegl /usr/local /usr/local
 COPY --from=build-libmypaint /usr/local /usr/local
 
+RUN ldconfig
+
 WORKDIR $SRCDIR/gimp
 RUN ./autogen.sh --prefix=$PREFIX --disable-gtk-doc --without-webkit
 RUN make -j`nproc`
 RUN make install
-
-RUN ldconfig
 
 # final binary
 
@@ -204,6 +210,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	libxpm4 \
 	luajit \
 	--no-install-recommends
+
+RUN ldconfig
 
 # entry point
 WORKDIR /
