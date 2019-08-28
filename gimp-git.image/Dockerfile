@@ -101,10 +101,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 WORKDIR $SRCDIR/libmypaint
 
 RUN git checkout libmypaint-v1
-RUN git config --global user.email "auto@example.com"
-RUN git config --global user.name "Automatic"
-# backport for automake 1.16
-RUN git cherry-pick -x 40d9077a80be13942476f164bddfabe842ab2a45
 
 RUN ./autogen.sh --prefix=$PREFIX
 RUN ./configure --disable-gegl
