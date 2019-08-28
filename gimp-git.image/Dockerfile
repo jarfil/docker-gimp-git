@@ -65,21 +65,14 @@ RUN git clone https://gitlab.gnome.org/GNOME/gegl.git
 # TODO: enable more
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	gtk-doc-tools \
-	libgexiv2-2 \
 	libgexiv2-dev \
-	libgs9 \
 	libgs-dev \
-	libjson-glib-1.0-0 \
 	libjson-glib-dev \
-	libopenexr23 \
 	libopenexr-dev \
-	librsvg2-2 \
 	librsvg2-dev \
 	python \
 	python-dev \
-	python-gtk2 \
 	python-gtk2-dev \
-	python-cairo \
 	python-cairo-dev \
 	ruby \
 	--no-install-recommends
@@ -129,32 +122,19 @@ RUN apt-get install -y \
 	autopoint \
 	gettext \
 	gtk-3-examples \
-	libaa1 \
 	libaa1-dev \
 	libappstream-glib-dev \
-	libasound2 \
 	libasound2-dev \
-	libbz2-1.0 \
 	libbz2-dev \
-	libexif12 \
 	libexif-dev \
-	libgtk2.0-0 \
-	libgtk2.0-bin \
 	libgtk2.0-dev \
 	libgtk-3-dev \
-	liblcms2-2 \
 	liblcms2-dev \
-	libmng1 \
 	libmng-dev \
-	libpoppler-glib8 \
 	libpoppler-glib-dev \
-	libtiff5 \
 	libtiff5-dev \
-	libwebp6 \
 	libwebp-dev \
-	libwmf0.2-7 \
 	libwmf-dev \
-	libxpm4 \
 	libxpm-dev \
 	mypaint-brushes \
 	openexr \
@@ -178,12 +158,56 @@ RUN ldconfig
 # ln -s `ls /usr/local/bin/gimp-?.* | head -n2` /usr/local/bin/gimp
 
 
+# ====
 
 FROM debian:testing
 MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
 # copy
-COPY --from=builder /usr/local/ /usr/local/
+COPY --from=build-gimp /usr/local/ /usr/local/
+
+# gegl depends
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+	libgexiv2-2 \
+	libgs9 \
+	libjson-glib-1.0-0 \
+	libopenexr23 \
+	librsvg2-2 \
+	python \
+	python-gtk2 \
+	python-cairo \
+	ruby \
+	--no-install-recommends
+
+# babl depends
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+	liblcms2-2 \
+	--no-install-recommends
+
+# libmypaint depends
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+	libjson-c4 \
+	--no-install-recommends
+
+# gimp depends
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+	libaa1 \
+	libasound2 \
+	libbz2-1.0 \
+	libexif12 \
+	libgexiv2-2 \
+	libgtk2.0-0 \
+	libgtk2.0-bin \
+	libjson-c-dev \
+	liblcms2-2 \
+	libmng1 \
+	libpoppler-glib8 \
+	libtiff5 \
+	libwebp6 \
+	libwmf0.2-7 \
+	libxpm4 \
+	luajit \
+	--no-install-recommends
 
 # entry point
 WORKDIR /
