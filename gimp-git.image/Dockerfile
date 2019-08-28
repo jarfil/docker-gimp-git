@@ -87,9 +87,11 @@ COPY --from=build-babl /usr/local /usr/local
 COPY --from=build-babl /usr/local/share/gir-1.0 /usr/share/gir-1.0
 
 WORKDIR $SRCDIR/gegl
-RUN ./autogen.sh --prefix=$PREFIX
-RUN make -j`nproc`
-RUN make install
+RUN meson --prefix=$PREFIX build
+WORKDIR $SRCDIR/gegl/build
+RUN ninja -j`nproc`
+RUN ninja install
+
 
 # ====
 
