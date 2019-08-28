@@ -35,10 +35,13 @@ ENV SRCDIR=/usr/src/gimp-git
 RUN mkdir -p $SRCDIR
 
 WORKDIR $SRCDIR
+
+
+# ====
+
+FROM builder AS build-babl
+
 RUN git clone https://gitlab.gnome.org/GNOME/babl.git
-RUN git clone https://gitlab.gnome.org/GNOME/gegl.git
-RUN git clone https://github.com/mypaint/libmypaint.git
-RUN git clone https://gitlab.gnome.org/GNOME/gimp.git
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	gobject-introspection \
@@ -51,6 +54,12 @@ WORKDIR $SRCDIR/babl/build
 RUN ninja -j`nproc`
 RUN ninja install
 
+
+# ====
+
+FROM builder AS build-gegl
+
+RUN git clone https://gitlab.gnome.org/GNOME/gegl.git
 
 # TODO: enable more
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
@@ -74,11 +83,19 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	ruby \
 	--no-install-recommends
 
+COPY --from=build-babl /usr/local /usr/local
+COPY --from=build-babl /usr/local/share/gir-1.0 /usr/share/gir-1.0
+
 WORKDIR $SRCDIR/gegl
 RUN ./autogen.sh --prefix=$PREFIX
 RUN make -j`nproc`
 RUN make install
 
+# ====
+
+FROM builder AS build-libmypaint
+
+RUN git clone https://github.com/mypaint/libmypaint.git
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	libjson-c-dev \
@@ -98,6 +115,12 @@ RUN ./configure --disable-gegl
 RUN make -j`nproc`
 RUN make install
 
+
+# ====
+
+FROM builder AS build-gimp
+
+RUN git clone https://gitlab.gnome.org/GNOME/gimp.git
 
 RUN apt-get install -y \
 	autopoint \
@@ -135,6 +158,10 @@ RUN apt-get install -y \
 	valac \
 	xsltproc \
 	--no-install-recommends
+
+COPY --from=build-babl /usr/local /usr/local
+COPY --from=build-gegl /usr/local /usr/local
+COPY --from=build-libmypaint /usr/local /usr/local
 
 WORKDIR $SRCDIR/gimp
 RUN ./autogen.sh --prefix=$PREFIX --disable-gtk-doc --without-webkit
