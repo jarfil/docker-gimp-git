@@ -172,63 +172,68 @@ RUN ./autogen.sh --prefix=$PREFIX --disable-gtk-doc --without-webkit
 RUN make -j`nproc`
 RUN make install
 
-# final binary
-
-# ln -s `ls /usr/local/bin/gimp-?.* | head -n2` /usr/local/bin/gimp
-
 
 # ====
 
 FROM debian:testing
 MAINTAINER Jaroslaw Filiochowski <jarfil@gmail.com>
 
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get -y update
+RUN apt-get -y upgrade
+RUN apt-get -y autoremove
+
+ENV PREFIX=/usr/local
+ENV PATH=$PREFIX/bin:$PATH
+
 # copy
 COPY --from=build-gimp /usr/local/ /usr/local/
 
-# gegl depends
+# depends
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
-	libgexiv2-2 \
-	libgs9 \
-	libjson-glib-1.0-0 \
-	libopenexr23 \
-	librsvg2-2 \
-	python \
-	python-gtk2 \
-	python-cairo \
-	ruby \
-	--no-install-recommends
-
-# babl depends
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
-	liblcms2-2 \
-	--no-install-recommends
-
-# libmypaint depends
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
-	libjson-c4 \
-	--no-install-recommends
-
-# gimp depends
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+	gjs \
 	libaa1 \
+	libappstream-glib8 \
 	libasound2 \
 	libbz2-1.0 \
 	libexif12 \
 	libgexiv2-2 \
+	libgs9 \
 	libgtk2.0-0 \
 	libgtk2.0-bin \
-	libjson-c-dev \
+	libgtk-3-0 \
+	libgtk-3-bin \
+	libheif1 \
+	libjson-c4 \
+	libjson-glib-1.0-0 \
 	liblcms2-2 \
 	libmng1 \
+	libopenexr23 \
+	libopenjp2-7 \
 	libpoppler-glib8 \
+	librsvg2-2 \
 	libtiff5 \
 	libwebp6 \
 	libwmf0.2-7 \
 	libxpm4 \
 	luajit \
+	mypaint-brushes \
+	openexr \
+	poppler-data \
+	python \
+	python-cairo \
+	python-gobject-2 \
+	python-gtk2 \
+	ruby \
+	valac \
+	xsltproc \
 	--no-install-recommends
 
 RUN ldconfig
+
+# final binary
+RUN ln -s `ls /usr/local/bin/gimp-?.* | head -n2` /usr/local/bin/gimp
 
 # entry point
 WORKDIR /
