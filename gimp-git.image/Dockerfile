@@ -11,6 +11,7 @@ RUN apt-get install -y \
 	ca-certificates \
 	git-core \
 	wget \
+	apt-utils \
 	--no-install-recommends
 
 # common depends
@@ -49,6 +50,7 @@ FROM builder AS build-babl
 RUN git clone https://gitlab.gnome.org/GNOME/babl.git
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
+	liblcms2-dev \
 	--no-install-recommends
 
 RUN ldconfig
@@ -79,6 +81,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	python-gtk2-dev \
 	python-cairo-dev \
 	ruby \
+	libgirepository1.0-dev \
 	--no-install-recommends
 
 COPY --from=build-babl /usr/local /usr/local
@@ -102,6 +105,7 @@ RUN git clone https://github.com/mypaint/libmypaint.git
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	libjson-c-dev \
 	libjson-c4 \
+	python \
 	--no-install-recommends
 
 WORKDIR $SRCDIR/libmypaint
@@ -129,8 +133,10 @@ RUN apt-get install -y \
 	libasound2-dev \
 	libbz2-dev \
 	libexif-dev \
+	libgexiv2-dev \
 	libgtk2.0-dev \
 	libgtk-3-dev \
+	libjson-glib-dev \
 	liblcms2-dev \
 	libmng-dev \
 	libpoppler-glib-dev \
@@ -140,8 +146,19 @@ RUN apt-get install -y \
 	libxpm-dev \
 	mypaint-brushes \
 	openexr \
+	poppler-data \
 	valac \
 	xsltproc \
+	libgirepository1.0-dev \
+	gjs \
+	luajit \
+	python-gobject-2-dev \
+	libopenexr-dev \
+	libheif-dev \
+	libopenjp2-7-dev \
+	python3-gi \
+	libjson-c-dev \
+	librsvg2-dev \
 	--no-install-recommends
 
 COPY --from=build-babl /usr/local /usr/local
