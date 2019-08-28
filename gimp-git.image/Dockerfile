@@ -22,6 +22,8 @@ RUN apt-get install -y \
 	libglib2.0-0 \
 	libglib2.0-dev \
 	libtool \
+	gobject-introspection \
+	meson \
 	--no-install-recommends
 	
 # compile dir
@@ -44,8 +46,6 @@ FROM builder AS build-babl
 RUN git clone https://gitlab.gnome.org/GNOME/babl.git
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
-	gobject-introspection \
-	meson \
 	--no-install-recommends
 
 WORKDIR $SRCDIR/babl
