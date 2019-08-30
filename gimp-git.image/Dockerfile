@@ -237,4 +237,4 @@ RUN ln -s `ls /usr/local/bin/gimp-?.* | head -n2` /usr/local/bin/gimp
 
 # entry point
 WORKDIR /
-ENTRYPOINT /usr/local/bin/gimp
+ENTRYPOINT ["/usr/local/bin/gimp"]
