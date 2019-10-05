@@ -209,7 +209,6 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y \
 	libjson-glib-1.0-0 \
 	liblcms2-2 \
 	libmng1 \
-	libopenexr23 \
 	libopenjp2-7 \
 	libpoppler-glib8 \
 	librsvg2-2 \
